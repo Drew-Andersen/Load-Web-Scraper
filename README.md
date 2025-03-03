@@ -32,15 +32,17 @@ This application was created using Django, Python3, Bootstrap, and custom CSS.
 
 2. Open your IDE of choice. I used VS Code.
 
-3. Using the terminal: <br />
+3. Create a virtual environmant using the terminal: <br />
     <code> python3 -m venv your_env </code><br />
+
+4. Activate the virtual environment using the terminal: <br />
     for Mac use <code>'source your_env/bin/activate'</code> <br />
     for Windows use <code>'your_env\Scripts\activate'</code>
 
-4. Install the dependancies: <br />
+5. Install the dependancies: <br />
     <code>python3 install -r requirements.txt</code>
 
-5. Apply migrations: <br />
+6. Apply migrations: <br />
     <code> python3 manage.py migrate </code>
 
 ## Usage
