@@ -1,5 +1,51 @@
 /* Working! */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120px;
+    animation: moveRoad 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveRoad {
+    from { transform: translateX(0); }
+    to { transform: translateX(-80px); }
+}
+
+.truck {
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    width: 400px;
+    height: 350px;
+    background: url('/static/images/truck2.png') no-repeat;
+    background-size: contain;
+    animation: moveTruck 6s linear infinite;
+}
+
+@keyframes moveTruck {
+    from { left: -200px; }
+    to { left: 100vw; }
+}
+
+/* Existing styles */
 .txt-50 {
     font-size: 50px;
     margin: 2rem auto;
+}
+
+.row {
+    position: relative;
+    z-index: 10;
 }
